@@ -2,6 +2,8 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Sejarah Perkembangan Islam di Indonesia abad 7 hingga 13</title>
 
 <style>
@@ -53,6 +55,18 @@ body {
 .search-box {
   position: relative;
 }
+@media (max-width:768px){
+  .top-header{
+    flex-direction:column;
+    gap:10px;
+    text-align:center;
+  }
+
+  .search-box input{
+    width:100%;
+  }
+}
+
 
 .search-box input {
   padding: 8px 12px;
@@ -114,6 +128,21 @@ body {
 .hero-overlay p {
   font-size: 14px;
 }
+@media (max-width: 768px){
+  .hero-bg{
+    height:200px;      /* lebih pendek */
+    padding:16px;
+  }
+
+  .hero-bg h2{
+    font-size:18px;
+  }
+
+  .hero-bg p{
+    font-size:13px;
+  }
+}
+
 
 /* CONTENT */
 .content {
@@ -140,6 +169,18 @@ body {
   gap: 22px;
   margin-top: 25px;
 }
+.grid{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:20px;
+}
+
+@media (max-width: 768px){
+  .grid{
+    grid-template-columns:1fr;
+  }
+}
+
 
 .era-card {
   background: #fff;
@@ -317,4 +358,5 @@ function removeHighlight() {
 
 </body>
 </html>
+
 
