@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Sejarah Perkembangan Islam di Indonesia abad 7 hingga 13</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+}
+
+/* HEADER */
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 30px;
+  background: #0b4fa3;
+  color: white;
+}
+
+.top-header h1 {
+  font-size: 20px;
+  margin: 0;
+}
+
+/* NAV + SEARCH */
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-box {
+  background: white;
+  color: #0b4fa3;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: .3s;
+  
+}
+
+.nav-box:hover {
+  background: #e6eefb;
+}
+
+/* SEARCH */
+.search-box {
+  position: relative;
+}
+
+.search-box input {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  font-size: 14px;
+  width: 220px;
+}
+
+#searchResults {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: rgb(133, 129, 129);
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  display: none;
+  z-index: 10;
+}
+
+#searchResults div {
+  padding: 8px;
+  cursor: pointer;
+}
+
+#searchResults div:hover {
+  background: #eee;
+}
+
+/* HERO */
+.hero {
+  height: 340px;
+  background: #222;
+}
+
+ .gambar{
+  width: 100%;
+  max-width: 600px;
+  display: block;
+  margin: 15px auto;
+  border-radius: 10px;
+}
+.hero-overlay {
+  height: 100%;
+  background: rgba(0,0,0,0.45);
+  color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.hero-overlay h2 {
+  font-size: 26px;
+  margin-bottom: 8px;
+}
+
+.hero-overlay p {
+  font-size: 14px;
+}
+
+/* CONTENT */
+.content {
+  padding: 30px;
+}
+
+.card {
+  display: none;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  animation: fade 0.4s ease;
+}
+
+@keyframes fade {
+  from {opacity: 0; transform: translateY(10px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* GRID BERANDA */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+  gap: 22px;
+  margin-top: 25px;
+}
+
+.era-card {
+  background: #fff;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(0,0,0,.08);
+  cursor: pointer;
+  transition: .3s;
+}
+
+.era-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0,0,0,.15);
+}
+
+.era-card h3 {
+  margin: 0 0 8px;
+  color: #0b4fa3;
+}
+
+.era-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.era-card span {
+  font-size: 13px;
+  font-weight: bold;
+  color: #0b4fa3;
+}
+
+/* HIGHLIGHT */
+mark {
+  background: yellow;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="top-header">
+  <h1>Sejarah Perkembangan Islam di Indonesia abad 7 hingga 13</h1>
+
+  <div class="header-right">
+    <div class="nav-box" onclick="show('beranda')">🏠 Beranda</div>
+    <div class="nav-box" onclick="show('anggota')">👥 Anggota</div>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Cari bab / kata..." oninput="liveSearch()">
+      <div id="searchResults"></div>
+    </div>
+  </div>
+</header>
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-overlay">
+    <h2>Sejarah Perkembangan Islam di Indonesia abad 7 hingga 13</h2>
+    <p>Dari Abad VII hingga Abad XIII Masehi</p>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<div class="content">
+
+  <div id="beranda" class="card">
+    <h2>Pembuka</h2>
+    <p>HALOWWWWWWWWWWWWWWWWWW</p>
+
+    <div class="grid">
+      <div class="era-card" onclick="show('abad7')">
+        <h3>Abad VII</h3>
+        <p>Awal masuk Islam</p>
+        <span>Baca →</span>
+      </div>
+
+      <div class="era-card" onclick="show('abad8')">
+        <h3>Abad VIII</h3>
+        <p>Interaksi budaya</p>
+        <span>Baca →</span>
+      </div>
+
+      <div class="era-card" onclick="show('abad9')">
+        <h3>Abad IX</h3>
+        <p>Komunitas Muslim</p>
+        <span>Baca →</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="abad7" class="card">
+    <h2>Abad VII</h2>
+    <p>Awal kedatangan pedagang Muslim ke Nusantara.</p>
+  </div>
+
+  <div id="abad8" class="card">
+    <h2>Abad VIII</h2>
+    <p>Interaksi awal Islam dengan masyarakat lokal.</p>
+  </div>
+
+  <div id="abad9" class="card">
+    <h2>Abad IX</h2>
+    <p>Mulai berkembang komunitas Muslim.</p>
+  </div>
+
+  <div id="anggota" class="card">
+    <h2>Anggota Kelompok</h2>
+    <ul>
+      <li>Nur Afni Oktavia</li>
+      <li>Nisma Gita Paputungan</li>
+      <li>Anindita Mifta</li>
+      <li>Raffi Rahidan</li>
+    </ul>
+  </div>
+
+</div>
+
+<script>
+const sections = document.querySelectorAll('.card');
+
+function show(id) {
+  sections.forEach(s => s.style.display = 'none');
+  const el = document.getElementById(id);
+  if (el) el.style.display = 'block';
+  removeHighlight();
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  show('beranda');
+});
+
+/* SEARCH */
+function liveSearch() {
+  const input = document.getElementById("searchInput").value.toLowerCase();
+  const results = document.getElementById("searchResults");
+  results.innerHTML = "";
+
+  if (input === "") {
+    results.style.display = "none";
+    removeHighlight();
+    return;
+  }
+
+  sections.forEach(sec => {
+    if (sec.innerText.toLowerCase().includes(input)) {
+      const div = document.createElement("div");
+      div.textContent = sec.querySelector("h2").innerText;
+      div.onclick = () => {
+        show(sec.id);
+        highlightText(input);
+        results.style.display = "none";
+      };
+      results.appendChild(div);
+    }
+  });
+
+  results.style.display = results.innerHTML ? "block" : "none";
+}
+
+function highlightText(word) {
+  sections.forEach(sec => {
+    sec.innerHTML = sec.innerHTML.replace(
+      new RegExp(`(${word})`, "gi"),
+      `<mark>$1</mark>`
+    );
+  });
+}
+
+function removeHighlight() {
+  sections.forEach(sec => {
+    sec.innerHTML = sec.innerHTML.replace(/<\/?mark>/g, "");
+  });
+}
+</script>
+
+</body>
+</html>
+
