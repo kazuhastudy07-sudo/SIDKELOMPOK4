@@ -2,8 +2,6 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Sejarah Perkembangan Islam di Indonesia abad 7 hingga 13</title>
 
 <style>
@@ -55,18 +53,6 @@ body {
 .search-box {
   position: relative;
 }
-@media (max-width:768px){
-  .top-header{
-    flex-direction:column;
-    gap:10px;
-    text-align:center;
-  }
-
-  .search-box input{
-    width:100%;
-  }
-}
-
 
 .search-box input {
   padding: 8px 12px;
@@ -98,11 +84,18 @@ body {
 }
 
 /* HERO */
-.hero {
-  height: 340px;
-  background: #222;
-}
+.hero{
+  height: 70vh;
+  background: url("GAMBARBG.JPEG") center/cover no-repeat;
 
+  display: flex;
+  align-items: flex-end;
+
+  padding: 40px;
+  color: white;
+
+  position: relative;
+}
  .gambar{
   width: 100%;
   max-width: 600px;
@@ -111,8 +104,7 @@ body {
   border-radius: 10px;
 }
 .hero-overlay {
-  height: 100%;
-  background: rgba(0,0,0,0.45);
+
   color: white;
   padding: 40px;
   display: flex;
@@ -128,21 +120,6 @@ body {
 .hero-overlay p {
   font-size: 14px;
 }
-@media (max-width: 768px){
-  .hero-bg{
-    height:200px;      /* lebih pendek */
-    padding:16px;
-  }
-
-  .hero-bg h2{
-    font-size:18px;
-  }
-
-  .hero-bg p{
-    font-size:13px;
-  }
-}
-
 
 /* CONTENT */
 .content {
@@ -169,18 +146,6 @@ body {
   gap: 22px;
   margin-top: 25px;
 }
-.grid{
-  display:grid;
-  grid-template-columns: repeat(3,1fr);
-  gap:20px;
-}
-
-@media (max-width: 768px){
-  .grid{
-    grid-template-columns:1fr;
-  }
-}
-
 
 .era-card {
   background: #fff;
@@ -247,24 +212,41 @@ mark {
 <div class="content">
 
   <div id="beranda" class="card">
-    <h2>Pembuka</h2>
-    <p>HALOWWWWWWWWWWWWWWWWWW</p>
+    <h2>Menelusuri Awal Masuknya Islam di Indonesia</h2>
+    <p>Bagaimana Islam pertama kali hadir di Nusantara?
+    Melalui perdagangan, budaya, dan dakwah damai, Islam mulai berkembang
+    di Indonesia sejak abad ke-7 hingga abad ke-12.</p>
 
     <div class="grid">
       <div class="era-card" onclick="show('abad7')">
-        <h3>Abad VII</h3>
+        <h3>Abad 7</h3>
         <p>Awal masuk Islam</p>
         <span>Baca →</span>
       </div>
 
       <div class="era-card" onclick="show('abad8')">
-        <h3>Abad VIII</h3>
+        <h3>Abad 8</h3>
         <p>Interaksi budaya</p>
         <span>Baca →</span>
       </div>
 
       <div class="era-card" onclick="show('abad9')">
-        <h3>Abad IX</h3>
+        <h3>Abad 9</h3>
+        <p>Komunitas Muslim</p>
+        <span>Baca →</span>
+      </div>
+      <div class="era-card" onclick="show('abad10')">
+        <h3>Abad 10</h3>
+        <p>Komunitas Muslim</p>
+        <span>Baca →</span>
+      </div>
+      <div class="era-card" onclick="show('abad11')">
+        <h3>Abad 11</h3>
+        <p>Komunitas Muslim</p>
+        <span>Baca →</span>
+      </div>
+      <div class="era-card" onclick="show('abad12')">
+        <h3>Abad 12</h3>
         <p>Komunitas Muslim</p>
         <span>Baca →</span>
       </div>
@@ -358,5 +340,4 @@ function removeHighlight() {
 
 </body>
 </html>
-
 
